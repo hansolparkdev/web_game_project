@@ -3,7 +3,13 @@
 import React, { Fragment, Component } from 'react';
 
 function getNumbers() { // 숫자 네 개
-
+  const candidate = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+  const array = [];
+  for (let i = 0; i < 4; i += 1) {
+    const chosen = candidate.splice(Math.floor(Math.random() * (9 - i)), 1)[0];
+    array.push(chosen);
+  }
+  return array;
 }
 class NumberBaseball extends Component {
   constructor(props) {
@@ -20,12 +26,17 @@ class NumberBaseball extends Component {
 
   onSubmitForm(e) {
     e.preventDefault();
-    this.setState({
-      value: e.target.value,
-    });
+    if (this.state.value === this.state.answer.join('')) {
+      console.log('홈런');
+    } else {
+      console.log('틀렸습니다.');
+    }
+
+    this.setState();
   }
 
   onChangeInput(e) {
+    console.log(this.state.answer);
     this.setState({
       value: e.target.value,
     });
