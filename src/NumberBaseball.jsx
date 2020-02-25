@@ -3,7 +3,8 @@
 /* eslint-disable react/destructuring-assignment */
 /* eslint-disable react/no-unused-state */
 // import React, { Fragment, Component, useState } from 'react';
-import React, { Fragment, useState } from 'react';
+import React, { Fragment, useState, memo } from 'react';
+import Try from './Try';
 
 function getNumbers() { // 숫자 네 개
   const candidate = [1, 2, 3, 4, 5, 6, 7, 8, 9];
@@ -15,7 +16,7 @@ function getNumbers() { // 숫자 네 개
   return array;
 }
 
-const NumberBaseball = () => {
+const NumberBaseball = memo(() => {
   const [result, setResult] = useState('');
   const [value, setValue] = useState('');
   const [answer, setAnswer] = useState(getNumbers());
@@ -56,7 +57,6 @@ const NumberBaseball = () => {
   };
 
   const onChangeInput = (e) => {
-    console.log(answer);
     setValue(e.target.value);
   };
   return (
@@ -65,20 +65,16 @@ const NumberBaseball = () => {
       <h2>{ result }</h2>
       <form onSubmit={onSubmitForm}>
         <input type="text" maxLength={4} value={value} onChange={onChangeInput} />
-        <button type="submit">입력</button>
       </form>
       <div>{`시도: ${tries.length}`}</div>
       <ul>
         {tries.map((v, i) => (
-          <li key={`${v.try + i}`}>
-            <b>{v.try}</b>
-            {`${v.result}`}
-          </li>
+          <Try key={`a${i + 1}`} tryinfo={v} />
         ))}
       </ul>
     </Fragment>
   );
-};
+});
 
 
 // class NumberBaseball extends Component {
