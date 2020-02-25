@@ -2,7 +2,7 @@ import React, { Fragment } from 'react';
 import Gugudan from './Gugudan';
 import WordRelay from './WordRelay';
 import NumberBaseball from './NumberBaseball';
-import RenderTest from './RenderTest';
+// import RenderTest from './RenderTest';
 import ResponseCheck from './ResponseCheck';
 
 const App = () => (
@@ -10,7 +10,6 @@ const App = () => (
     <Gugudan />
     <WordRelay />
     <NumberBaseball />
-    <RenderTest />
     <ResponseCheck />
   </Fragment>
 );
