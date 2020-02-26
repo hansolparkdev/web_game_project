@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import React, { memo } from 'react';
 
 // class Ball extends PureComponent {

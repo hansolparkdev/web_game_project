@@ -27,6 +27,7 @@ module.exports = {
     'react/jsx-filename-extension':0,
     'no-console': 'off',
     'react/jsx-fragments': 0,
-    'radix':0,
+    'radix': 0,
+    'no-unused-vars': 0,
   },
 };

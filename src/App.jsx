@@ -4,15 +4,17 @@ import React, { Fragment } from 'react';
 // import NumberBaseball from './NumberBaseball';
 // import RenderTest from './RenderTest';
 // import ResponseCheck from './ResponseCheck';
-import Lotto from './Lotto';
+// import Lotto from './Lotto';
+import TicTacToe from './TicTacToe';
 
 // import RSP from './RSP';
 
 const App = () => (
   <Fragment>
-    <Lotto />
+    <TicTacToe />
   </Fragment>
 );
+// <Lotto />
 // <RSP />
 // <Gugudan />
 //     <WordRelay />
