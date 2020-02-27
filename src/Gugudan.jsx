@@ -1,6 +1,8 @@
-import React, { Fragment, useState, useRef } from 'react';
+import React, {
+  Fragment, useState, useRef, memo,
+} from 'react';
 
-const Gugudan = () => {
+const Gugudan = memo(() => {
   const [num1, setNum1] = useState(Math.ceil(Math.random() * 9));
   const [num2, setNum2] = useState(Math.ceil(Math.random() * 9));
   const [value, setValue] = useState('');
@@ -34,6 +36,6 @@ const Gugudan = () => {
       </form>
     </Fragment>
   );
-};
+});
 
 export default Gugudan;

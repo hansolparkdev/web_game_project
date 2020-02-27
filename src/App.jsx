@@ -6,13 +6,13 @@ import React, { Fragment } from 'react';
 // import ResponseCheck from './ResponseCheck';
 // import Lotto from './Lotto';
 // import TicTacToe from './TicTacToe';
-import MineSearch from './MineSearch';
-
+// import MineSearch from './MineSearch';
 // import RSP from './RSP';
+import Games from './Games';
 
 const App = () => (
   <Fragment>
-    <MineSearch />
+    <Games />
   </Fragment>
 );
 // <TicTacToe />

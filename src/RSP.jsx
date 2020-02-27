@@ -2,7 +2,7 @@
 /* eslint-disable react/state-in-constructor */
 // import React, { Component, Fragment } from 'react';
 import React, {
-  Fragment, useState, useRef, useEffect,
+  Fragment, useState, useRef, useEffect, memo,
 } from 'react';
 
 // 클래스의 경우 => constructor => render -> ref -> componentDidMount ->
@@ -23,7 +23,7 @@ const scores = {
 
 const computerChoice = (imgCoord) => Object.entries(rspCoords).find((v) => v[1] === imgCoord)[0];
 
-const RSP = () => {
+const RSP = memo(() => {
   const [result, setResult] = useState('');
   const [imgCoord, setImgCoord] = useState(rspCoords.바위);
   const [score, setScore] = useState(0);
@@ -81,7 +81,7 @@ const RSP = () => {
       <div>{`현재 ${score}점`}</div>
     </Fragment>
   );
-};
+});
 // class RSP extends Component {
 //   state = {
 //     result: '',
