@@ -31,5 +31,6 @@ module.exports = {
     'no-unused-vars': 0,
     'import/no-cycle': 0,
     'react/prop-types' : 0,
+    'react/no-array-index-key': 0,
   },
 };
