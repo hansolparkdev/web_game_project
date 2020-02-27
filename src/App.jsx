@@ -5,13 +5,14 @@ import React, { Fragment } from 'react';
 // import RenderTest from './RenderTest';
 // import ResponseCheck from './ResponseCheck';
 // import Lotto from './Lotto';
-import TicTacToe from './TicTacToe';
+// import TicTacToe from './TicTacToe';
+import MineSearch from './MineSearch';
 
 // import RSP from './RSP';
 
 const App = () => (
   <Fragment>
-    <TicTacToe />
+    <MineSearch />
   </Fragment>
 );
 // <TicTacToe />
