@@ -30,5 +30,6 @@ module.exports = {
     'radix': 0,
     'no-unused-vars': 0,
     'import/no-cycle': 0,
+    'react/prop-types' : 0,
   },
 };
