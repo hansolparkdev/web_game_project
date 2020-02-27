@@ -14,10 +14,12 @@ const App = () => (
     <TicTacToe />
   </Fragment>
 );
+// <TicTacToe />
 // <Lotto />
 // <RSP />
 // <Gugudan />
-//     <WordRelay />
-//     <NumberBaseball />
-//     <ResponseCheck />
+// <WordRelay />
+// <NumberBaseball />
+// <ResponseCheck />
+
 export default App;

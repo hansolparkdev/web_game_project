@@ -29,5 +29,6 @@ module.exports = {
     'react/jsx-fragments': 0,
     'radix': 0,
     'no-unused-vars': 0,
+    'import/no-cycle': 0,
   },
 };
